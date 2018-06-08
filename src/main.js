@@ -211,6 +211,7 @@ function addInteraction() {
       listener = sketch.getGeometry().on('change', function(evt) {
         const geom = evt.target;
         let output;
+        let tooltipCoord; // KM
         if (geom instanceof Polygon) {
           output = formatArea(geom);
           tooltipCoord = geom.getInteriorPoint().getCoordinates();
@@ -220,8 +221,12 @@ function addInteraction() {
         }
         measureTooltipElement.innerHTML = output;
         measureTooltip.setPosition(tooltipCoord);
+        console.log(tooltipCoord);
       });
     }, this);
+    // KM
+    //let coord = tooltipCoord;
+    //console.log(coord);
 
   draw.on('drawend',
     function() {
