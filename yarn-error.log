@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files (x86)\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\km40217\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\km40217\bin;C:\Program Files\Python36\Scripts;C:\Program Files\Python36;C:\oracle\ora11g\client\bin;C:\Python27\Lib\site-packages\PyQt4;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Sennheiser\SoftphoneSDK;C:\Python27;C:\Python27\DLLs;C:\Python27\Scripts;C:\Python27\Lib\site-packages\vtk;C:\Python27\gnuplot\binary;C:\Program Files (x86)\pythonxy\SciTE-3.2.2-1;C:\Program Files (x86)\pythonxy\console;C:\MinGW32-xy\bin;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Anaconda3;C:\Anaconda3\Scripts;C:\Anaconda3\Library\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Git\bin;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone;C:\Program Files (x86)\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Python36\Scripts;C:\Program Files\Python36;C:\oracle\ora11g\client\bin;C:\Python27\Lib\site-packages\PyQt4;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Sennheiser\SoftphoneSDK;C:\Python27;C:\Python27\DLLs;C:\Python27\Scripts;C:\Python27\Lib\site-packages\vtk;C:\Python27\gnuplot\binary;C:\Program Files (x86)\pythonxy\SciTE-3.2.2-1;C:\Program Files (x86)\pythonxy\console;C:\MinGW32-xy\bin;C:\Users\km40217\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Anaconda3;C:\Anaconda3\Scripts;C:\Anaconda3\Library\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Skype\Phone;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit;C:\Program Files (x86)\nodejs;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;C:\Users\CHANGE_WITH_YOUR_USERNAME\AppData\Roaming\npm;C:\Users\km40217\AppData\Roaming\npm
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.9.4
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  "name": "OL-draw-clip-test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "start": "webpack-dev-server --open"
+    },
+    "dependencies": {
+      "node-sass": "^4.9.0",
+      "normalize.css": "^8.0.0",
+      "ol": "5.0.0-beta.13",
+      "ol-hashed": "^1.0.2",
+      "sass-loader": "^7.0.1"
+    },
+    "devDependencies": {
+      "css-loader": "^0.28.11",
+      "style-loader": "^0.21.0",
+      "webpack": "^4.8.1",
+      "webpack-cli": "^2.1.3",
+      "webpack-dev-server": "^3.1.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: C:\Users\km40217\ResasPwaMapApp\OpenLayers\OL-draw-clip-test\package.json: Unexpected token : in JSON at position 9
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:92:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:103:13
+      at <anonymous>
