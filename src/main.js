@@ -43,6 +43,11 @@ function addInteraction() {
      //let area = parser.writeFeatures(arg1.feature, {featureProjection: map.getView().getProjection()});
      // Try getProperties NOT SURE 
      //var selected = select.e
+
+     // Try to writeFeature
+     let area = parser.writeFeaturesObject(arg1.feature);
+     //let geom = parser.readGeometry(area);
+
       console.log(area);
     });
 
