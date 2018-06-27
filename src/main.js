@@ -1,3 +1,4 @@
+
 import 'ol/ol.css';
 import Map from 'ol/Map.js';
 import View from 'ol/View.js';
@@ -6,6 +7,27 @@ import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer.js';
 import {Vector as VectorSource} from 'ol/source.js';
 import OSM from 'ol/source/OSM';
 import GeoJSON from 'ol/format/geojson';
+import intersect from '@turf/intersect';
+import MVT from 'ol/format/MVT';
+import VectorTileLayer from 'ol/layer/VectorTile';
+import VectorTileSource from 'ol/source/VectorTile';
+import {Fill, Icon, Stroke, Style, Text} from 'ol/style.js';
+
+// Code for adding MB VT, need style as well and ideally sat street layer, not streets
+// const key = ;
+
+// const MBsat = new VectorTileSource({
+//   source: new VectorTileSource({
+//     attributions: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> ' +
+//     '© <a href="https://www.openstreetmap.org/copyright">' +
+//     'OpenStreetMap contributors</a>',
+//   format: new MVT(),
+//   url: 'https://{a-d}.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/' +
+//       '{z}/{x}/{y}.vector.pbf?access_token=' + key
+// }),
+// style: createMapboxStreetsV6Style(Style, Fill, Stroke, Icon, Text)
+// });
+
 
 const raster = new TileLayer({
   source: new OSM()
@@ -45,10 +67,21 @@ function addInteraction() {
      //var selected = select.e
 
      // Try to writeFeature
-     let area = parser.writeFeaturesObject(arg1.feature);
-     //let geom = parser.readGeometry(area);
+     let area = parser.writeFeature(arg1.feature, {featureProjection: map.getView().getProjection()});
+     // var geom = parser.readGeometry(area);
+     // Exploring JSON feature 
+     var areaObject = JSON.parse(area);
 
-      console.log(area);
+     console.log(typeof area); 
+     console.log(area);
+    //  console.log(typeof geom); 
+    //  console.log(geom);
+
+
+     console.log(typeof areaObject); 
+     console.log(areaObject);
+
+
     });
 
     // From SO1 

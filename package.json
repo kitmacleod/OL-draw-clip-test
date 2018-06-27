@@ -7,6 +7,8 @@
     "start": "webpack-dev-server --open"
   },
   "dependencies": {
+    "@turf/intersect": "^6.1.3",
+    "jsts": "^1.6.0",
     "node-sass": "^4.9.0",
     "normalize.css": "^8.0.0",
     "ol": "5.0.0-beta.13",
