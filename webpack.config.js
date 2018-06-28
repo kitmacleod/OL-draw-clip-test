@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry:'./src/main.js',
+  mode: 'development', 
   devServer:{
     contentBase: path.join(__dirname, 'public'),
      historyApiFallback: true

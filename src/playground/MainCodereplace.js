@@ -1,5 +1,3 @@
-
-
 // import 'ol/ol.css';
 // import Map from 'ol/Map';
 // import View from 'ol/View';
@@ -49,65 +47,56 @@
 // //   })
 // // })
 
-// My second Bing example, which is not working
+// const bingOS = new TileLayer({
+//   source: new BingMaps({
+//     key: 'AgdfSiITbjOwmzHKzwutHUYonPY_D-OGbeJ-F89Hwncc22hFqeWBOFpxlK5jQdyU',
+//     imagerySet: 'ordanceSurvey'
+//   })
+// });
 
+// const bingAerial = new TileLayer({
+//   source: new BingMaps({
+//     key: 'AgdfSiITbjOwmzHKzwutHUYonPY_D-OGbeJ-F89Hwncc22hFqeWBOFpxlK5jQdyU',
+//     imagerySet: 'ArialWithLabels'
+//   })
+// });
+
+// const map = new Map({
+//   target: 'map',
+//   layers: [bingOS, bingAerial],
+//   view: new View({
+//     center: [-13553864, 5918250],
+//           zoom: 11,
+//           minZoom: 9,
+//           maxZoom: 13
+//   })
+// });
+
+
+
+//-------------------------------
+// OL simple example
 import Map from 'ol/Map.js';
 import View from 'ol/View.js';
 import TileLayer from 'ol/layer/Tile.js';
 import BingMaps from 'ol/source/BingMaps.js';
 
-var bingOS = new TileLayer({
-  source: new BingMaps({
-    key: 'AgdfSiITbjOwmzHKzwutHUYonPY_D-OGbeJ-F89Hwncc22hFqeWBOFpxlK5jQdyU',
-    imagerySet: 'ordanceSurvey'
-  })
-});
 
-var bingAerial = new TileLayer({
-  source: new BingMaps({
-    key: 'AgdfSiITbjOwmzHKzwutHUYonPY_D-OGbeJ-F89Hwncc22hFqeWBOFpxlK5jQdyU',
-    imagerySet: 'ArialWithLabels'
-  })
-});
-
-var map = new Map({
+const map = new Map({
   target: 'map',
-  layers: [bingAerial],
+  layers: [
+    new TileLayer({
+      source: new BingMaps({
+        key: 'AgdfSiITbjOwmzHKzwutHUYonPY_D-OGbeJ-F89Hwncc22hFqeWBOFpxlK5jQdyU',
+        imagerySet: 'Aerial'
+      })
+    })
+  ],
   view: new View({
     center: [-13553864, 5918250],
-          zoom: 11,
-          minZoom: 9,
-          maxZoom: 13
-  })
-});
-
-
-
-//-------------------------------
-// My first simple  Bing example
-// import Map from 'ol/Map.js';
-// import View from 'ol/View.js';
-// import TileLayer from 'ol/layer/Tile.js';
-// import BingMaps from 'ol/source/BingMaps.js';
-
-
-// const map = new Map({
-//   target: 'map',
-//   layers: [
-//     new TileLayer({
-//       source: new BingMaps({
-//         key: 'AgdfSiITbjOwmzHKzwutHUYonPY_D-OGbeJ-F89Hwncc22hFqeWBOFpxlK5jQdyU',
-//         imagerySet: 'Aerial'
-//       })
-//     })
-//   ],
-//   view: new View({
-//     center: [-13553864, 5918250],
-//     zoom: 11,
-//     minZoom: 9,
-//     maxZoom: 13
-//   })
-// });
+    zoom: 11,
+    minZoom: 9,
+    maxZoom: 13
 
 
 //-----------------------------------
